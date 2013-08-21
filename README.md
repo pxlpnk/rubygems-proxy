@@ -9,7 +9,7 @@ rubygems-proxy
 Usage
 =====
 <pre>
-git clone git@github.com:pxlpnk/rubygems-proxy.git
+git clone https://github.com/pxlpnk/rubygems-proxy.git
 
 cd rubygems-proxy
 
