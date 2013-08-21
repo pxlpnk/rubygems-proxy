@@ -5,6 +5,10 @@ gem 'rake'
 gem 'sinatra'
 gem 'sinatra-contrib'
 
+group :production do
+  gem 'puma'
+end
+
 group :development do
   gem 'pry'
   gem 'rerun'
