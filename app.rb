@@ -22,7 +22,7 @@ get '/' do
 end
 
 get '/quick/Marshal.4.8/*' do
-    fetch_url = URI.join(RUBYGEMS_URL, request.fullpath)
+  fetch_url = URI.join(RUBYGEMS_URL, request.fullpath)
   destination_file = File.join(CACHE_PATH, request.fullpath)
   gem = Fetcher.new(fetch_url, destination_file)
   gem.fetch
