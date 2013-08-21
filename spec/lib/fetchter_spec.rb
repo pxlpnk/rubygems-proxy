@@ -1,3 +1,4 @@
+# encoding: utf-8
 require 'fetcher'
 require 'net/http'
 require 'webmock'
