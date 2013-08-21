@@ -1,4 +1,10 @@
-require 'pry'
+# encoding: utf-8
+
+require 'net/http'
+require 'fileutils'
+
+# Fetches remote gems and serves them
+
 class Fetcher
 
   PORT = 80
@@ -9,6 +15,7 @@ class Fetcher
   end
 
   def write_to_file(response)
+    FileUtils.mkdir_p(File.dirname(@destination))
     File.open(@destination, 'w+') do |file|
       write(response, file)
     end
