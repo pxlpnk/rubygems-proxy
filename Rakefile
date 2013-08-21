@@ -17,9 +17,12 @@ Rubocop::RakeTask.new
 
 
 require 'fileutils'
-namespace "rubygems_proxy" do
-  desc "clean the cache in ./cache/"
+namespace 'rubygems_proxy' do
+  desc 'clean the cache in ./cache/'
   task :clean do
     FileUtils.rm_rf('cache')
   end
 end
+
+desc 'Run all tests and checkers'
+task ci:  %w[spec reek rubocop]
