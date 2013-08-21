@@ -19,5 +19,5 @@ rackup</pre>
 
 In your Gemfile let the source point to: ```source 'http://gems.example.com'```
 
-The proxy will bypass redirect to rubygems.org to resolve the dependencies. 
-The gems and gemspecs that are then requestes are downloaded to ```cache/``` and served from there.
+The proxy will redirect to rubygems.org to resolve the dependencies. 
+The gems and gemspecs that are then requested are downloaded to ```cache/``` and served from there.
