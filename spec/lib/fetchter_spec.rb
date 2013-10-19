@@ -13,7 +13,7 @@ describe Fetcher do
   end
 
   describe 'retrives a remote gem' do
-    before (:each) do
+    before(:each) do
       @fetcher = Fetcher.new('http://localhost/', 'test_dir/test_file')
     end
 
@@ -30,7 +30,7 @@ describe Fetcher do
   end
 
   describe '#fetch_gem' do
-    before (:each) do
+    before(:each) do
       @fetcher = Fetcher.new('http://localhost/', 'test_dir/test_file')
     end
 
@@ -47,7 +47,7 @@ describe Fetcher do
   end
 
   describe '#write_to_file' do
-    before (:each) do
+    before(:each) do
       @destination = 'test_dir/test_file'
       @fetcher = Fetcher.new('http://localhost/', @destination)
     end
