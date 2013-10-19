@@ -41,7 +41,7 @@ class Fetcher
   def fetch_gem(url = nil, limit = 3)
     # XXX: use https by default!
     url ||= @url
-    raise ArgumentError, 'HTTP redirect too deep' if limit == 0
+    fail ArgumentError, 'HTTP redirect too deep' if limit == 0
     Net::HTTP.start(url.host) do |connection|
       get_data(connection, limit)
     end
